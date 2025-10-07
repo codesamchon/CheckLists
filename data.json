@@ -1,0 +1,24 @@
+{
+  "lists": [
+    {
+      "id": "l1",
+      "title": "Grocery: Weekend",
+      "details": "Buy items for the weekend dinner",
+      "responses": [
+        {"user":"JH","answer":null,"note":""},
+        {"user":"JM","answer":"yes","note":"Got tomatoes"},
+        {"user":"KH","answer":"no","note":"We already have milk"}
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Office: Printer ink",
+      "details": "Check ink levels and order if low",
+      "responses": [
+        {"user":"JH","answer":"yes","note":"Ordered online"},
+        {"user":"JM","answer":null,"note":""},
+        {"user":"KH","answer":null,"note":""}
+      ]
+    }
+  ]
+}
