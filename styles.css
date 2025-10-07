@@ -1,0 +1,36 @@
+/* Mobile-first styles */
+*{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+body{margin:0;background:#f7f7f9;color:#111}
+header{background:#0b5cff;color:white;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
+header h1{margin:0;font-size:18px}
+.user-select label{margin-right:8px}
+main{padding:12px}
+.new-item{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.new-item input,.new-item textarea{padding:8px;border:1px solid #ddd;border-radius:6px;font-size:16px}
+.new-item button{background:#0b5cff;color:white;border:none;padding:10px;border-radius:8px;font-weight:600}
+.lists{display:flex;flex-direction:column;gap:12px}
+.list{background:white;border-radius:10px;padding:12px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.list-header{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.list .title{margin:0;font-size:16px}
+.list .details{margin:8px 0;color:#444}
+.responses{display:flex;flex-direction:column;gap:8px}
+.response{display:flex;align-items:center;gap:8px;padding:8px;border-radius:8px;border:1px solid #eee;background:#fafafa}
+.response .who{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#eee;font-weight:700}
+.response .info{flex:1}
+.response .actions{display:inline-flex;gap:0;border-radius:8px;background:#eef2ff;padding:3px}
+.response .actions button{padding:6px 10px;border:none;background:transparent;color:#333;border-radius:0;cursor:pointer;font-weight:600}
+.response .actions button:first-child{border-top-left-radius:6px;border-bottom-left-radius:6px}
+.response .actions button:last-child{border-top-right-radius:6px;border-bottom-right-radius:6px}
+.response .actions button.active{color:white}
+.response .actions button.yes.active{background:#0ac36a}
+.response .actions button.no.active{background:#ff6b6b}
+.response .actions button:disabled{opacity:0.5;cursor:not-allowed}
+.response .note{width:100%;padding:6px;border-radius:6px;border:1px solid #e6e6e6}
+.add-response{margin-top:8px}
+.add-response .note{width:100%;padding:8px;border-radius:8px;border:1px solid #ddd}
+footer{padding:10px 12px;display:flex;justify-content:center;gap:8px}
+.actions{display:flex;gap:8px}
+.import-label{background:#fff;padding:6px 10px;border-radius:8px;border:1px solid #ddd;display:inline-flex;gap:8px;align-items:center}
+.import-label input{display:none}
+#exportBtn,#clearBtn{padding:8px 10px;border-radius:8px;border:none;background:#eee}
+@media(min-width:700px){main{max-width:700px;margin:12px auto}}

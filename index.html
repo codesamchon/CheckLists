@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Check Lists (mobile)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Check Lists</h1>
+    <div class="user-select">
+      <label for="user">User:</label>
+      <select id="user">
+        <option value="JH">JH</option>
+        <option value="JM">JM</option>
+        <option value="KH">KH</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section class="new-item">
+      <input id="newTitle" placeholder="Checklist title" />
+      <textarea id="newDetails" placeholder="Details or description (optional)"></textarea>
+      <button id="addBtn">Add Checklist</button>
+    </section>
+
+    <section id="lists" class="lists"></section>
+  </main>
+
+  <footer>
+    <div class="actions">
+      <button id="exportBtn">Export JSON</button>
+      <label class="import-label">
+        Import JSON
+        <input id="importFile" type="file" accept="application/json" />
+      </label>
+      <button id="clearBtn">Clear All</button>
+    </div>
+  </footer>
+
+  <template id="listTemplate">
+    <div class="list">
+      <div class="list-header">
+        <h2 class="title"></h2>
+        <button class="del-list">Delete</button>
+      </div>
+      <p class="details"></p>
+      <div class="responses">
+        <!-- per-user responses go here -->
+      </div>
+      <div class="add-response">
+        <input class="note" placeholder="Add note (optional)" />
+      </div>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
