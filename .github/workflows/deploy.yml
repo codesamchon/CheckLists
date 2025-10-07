@@ -20,10 +20,9 @@ jobs:
       # If you build the site (e.g., a JS build step), run it here and point
       # the upload step at the generated folder (e.g., ./dist or ./build).
 
-      - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v2
+      - name: Deploy to gh-pages branch (alternative)
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: '.'
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: '.'
+          publish_branch: gh-pages
